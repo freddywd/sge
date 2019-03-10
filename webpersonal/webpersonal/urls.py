@@ -26,6 +26,7 @@ urlpatterns = [
     path('contacto/',core_views.contacto,name="Contacto"),
     path('admin/', admin.site.urls),
 ]
+admin.site.site_header = 'SGE Administración'
 
 if settings.DEBUG:  
     from django.conf.urls.static import static
