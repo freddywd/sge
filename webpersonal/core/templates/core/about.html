@@ -1,10 +1,27 @@
 {% extends 'core/base.html' %}
-{% block content %}
+
 {% block titulo %}
-Acerca de | Mi Web Personal
+Acerca de | Sistema de Gestión Escolar
 {% endblock %}
-<h2>Acerca de</h2>
-<p>Me llamo Freddy y soy programador</p>
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers%}
+<h1>SGE</h1>
+<span class="subheading">Sistema de Gestión Escolar</span>
+{% endblock%}
+
+
+{% block content %}
+<div class="row"> 
+<div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/logo.jpg' %} " alt="avator">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">SGE</h2>   
+        <p>Diseñar sistemas para integrar y facilitar la Gestión Escolar es nuestro objetivo, por lo cual trabajamos día a día</p>
+        <p>Nuestros sistemas se integran tanto en Escuelas Primarias como en Universidades</p>
+    </div> 
+</div>  
 
 {% endblock %}
 
