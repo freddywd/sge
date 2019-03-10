@@ -10,4 +10,6 @@ def about(request):
 
 
 def contacto(request):
-    return render (request,"core/contacto.html")       
+    return render (request,"core/contacto.html") 
+
+ 
