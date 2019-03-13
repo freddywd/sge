@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'portfolio.apps.PortfolioConfig',
+    'webpersonal.apps.Permisos',
+    'webpersonal.apps.GestionDeRecursos'
 ]
 
 MIDDLEWARE = [
